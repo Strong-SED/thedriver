@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de Voiture</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="icon" href="img/logo_thedriver.png">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333; /* Couleur de texte */
+        }
+
+        .advantages-section {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+        .advantage-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .advantage-item i {
+            font-size: 1.5rem;
+            color: rgb(95, 214, 95);
+            margin-right: 10px;
+        }
+        .rating i {
+            font-size: 1.5rem;
+            color: gold;
+        }
+        .hero-section {
+            background: url('img/img_back.png') no-repeat center center;
+            background-size: cover;
+            height: 50vh;
+            color: rgb(253, 251, 251);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .hero-section .logo {
+            position: absolute;
+            top: 0px;
+            left: 5px;
+            max-width: 230px; /* Ensure logo fits within its container */
+            height: auto;
+        }
+        .btn-primary {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+        }
+        .btn-login {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1rem;
+        }
+        .content-container {
+            background-color: white;
+            border-radius: 15px;
+            margin-top: -50px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 10;
+        }
+        .services {
+            padding: 60px 0;
+        }
+        .service-item {
+            margin-bottom: 30px;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        .rating{
+            text-align: center;
+        }
+        .special-offers-section {
+            padding: 60px 0;
+        }
+        .company-text {
+            margin-top: 40px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .company-text p {
+            margin-bottom: 0;
+        }
+        .card {
+            border-radius: 20px;
+            background-color: rgba(212, 210, 210, 0);
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 1.5rem; /* Taille des icônes */
+            color: #007bff; /* Couleur des icônes */
+        }
+        .social-icons a:hover {
+            color: #e3e7ec; /* Couleur au survol */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            .hero-section p {
+                font-size: 1rem;
+            }
+            .advantages-section .col-md-5 {
+                margin-left: 0;
+                margin-bottom: 30px;
+            }
+            .advantages-section .col-md-1 {
+                display: none;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="img/logo_thedriver.png" alt="Logo" class="logo"> <!-- Replace 'img/logo.png' with the actual path to your logo -->
+        <h1>Location de Voiture</h1>
+        <p>Les meilleures voitures aux meilleurs prix</p>
+        <a href="login.php" class="btn btn-primary">Découvrir nos services</a>
+    </section>
+
+    <!-- Content Container -->
+    <div class="container content-container">
+        <!-- Advantages Section -->
+        <section class="advantages-section">
+            <div class="row">
+                <div class="col-md-5">
+                    <h2>Pourquoi réserver chez nous?</h2><br>
+                    <ul class="list-unstyled">
+                        <li class="advantage-item"><i class="fas fa-check-circle"></i>Réservez sur notre site internet plutôt que sur un comparateur</li>
+                        <li class="advantage-item"><i class="fas fa-check-circle"></i>Évitez les surprises sur les assurances vendues par des tiers</li>
+                        <li class="advantage-item"><i class="fas fa-check-circle"></i>Pas de frais supplémentaires, prix final garanti</li>
+                        <li class="advantage-item"><i class="fas fa-check-circle"></i>Meilleur prix garanti</li>
+                        <li class="advantage-item"><i class="fas fa-check-circle"></i>Aucune dépôt, aucune franchise</li>
+                    </ul>
+                </div>
+                <div class="col-md-1"></div> <!-- Small space between columns -->
+                <div class="col-md-5" style="text-align: center;">
+                    <h2>Nos clients nous font confiance</h2><br>
+                    <p>Des 37487 commentaires reçus à l’heure actuelle de la part de nos clients, 80% ont déclarés être satisfaits de notre prestation de services lors de leur location de voiture.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="row">
+                <div class="col-md-4 service-item">
+                    <h3>Large choix de véhicules</h3>
+                    <p>Nous proposons une large gamme de voitures adaptées à tous vos besoins.</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <h3>Tarifs compétitifs</h3>
+                    <p>Profitez de nos tarifs attractifs et de nos offres spéciales.</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <h3>Service client 24/7</h3>
+                    <p>Notre équipe est disponible à toute heure pour répondre à vos questions.</p>
+                </div>
+            </div>
+        </section>
+    </div><br>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers-section text-center" style="background-color: rgba(215, 234, 236, 0.262);">
+        <div class="container-fluid">
+            <h2>Offres Spéciales</h2><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Réduction pour les réservations anticipées</h3>
+                            <p class="card-text">Réservez votre voiture à l'avance et économisez jusqu'à 20% sur votre location.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Forfait Week-end</h3>
+                            <p class="card-text">Louez une voiture pour le week-end et obtenez une journée supplémentaire gratuitement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Offre de Remboursement</h3><br>
+                            <p class="card-text">Obtenez un remboursement de 10% sur votre prochaine location en parrainant un ami.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Texte de l'entreprise -->
+        <div class="container">
+            <div class="company-text">
+                <p>Bienvenue chez TheDriver, votre partenaire idéal pour la location de voitures. Nous sommes déterminés à vous offrir une expérience exceptionnelle, que ce soit pour vos voyages d'affaires ou vos vacances en famille. Avec notre large gamme de véhicules et nos offres spéciales, nous sommes là pour rendre chaque voyage aussi agréable que possible. Réservez dès maintenant et partez à l'aventure avec TheDriver!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://web.facebook.com/thedriver229" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/the_driver_229/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://web.whatsapp.com/send?autoload=1&app_absent=0&phone=22950141414&text" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            </div>
+            <p>Copyright &copy; 2024 Thedriver.com Location de Voiture Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript pour Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
